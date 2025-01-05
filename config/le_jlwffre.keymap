@@ -98,7 +98,7 @@
             &kp A      &kp S      &kp D      &kp F      &kp G                             &kp H      &kp J      &kp K      &kp L      &kp ENTER 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Ctr/Z   │  X       │  C       │  V       │  B       │                      │  N       │  M       │ , <      │ . >      │ RShift   │
-         &mt LCTRL Z  &kp X      &kp C      &kp V      &kp B                             &kp N      &kp M     &lt 3 COMMA &kp DOT   &kp RSHIFT
+         &mt LCTRL Z  &mt LALT X &mt LGUI C   &kp V      &kp B                            &kp N      &kp M     &lt 3 COMMA &kp DOT   &kp RSHIFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 2 Z     &kp BSPC        &kp C_MUTE       &kp SPACE    &mo 1
         //                                 ╰──────────┴──────────╯                      ╰──────────┴──────────╯
@@ -112,11 +112,11 @@
         //│  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │      │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │
             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  TAB     │    `     │    '     │    ;     │    \     │      │   -      │   =      │   [      │    ]     │   Enter  │
+        //│    /     │    `     │    '     │    ;     │    \     │      │   -      │   =      │   [      │    ]     │   Enter  │
             &kp TAB   &kp GRAVE   &kp APOS   &kp SEMI   &kp BSLH         &kp MINUS   &kp EQUAL  &kp LBKT   &kp RBKT   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │    /     │  RShift  │
-            &none      &none      &none      &none      &none             &none      &none      &none      &kp FSLH  &kp RSHIFT
+            &none      &none      &kp CAPS   &none      &none             &none      &none      &none      &kp FSLH  &kp RSHIFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp DEL   &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
@@ -130,8 +130,8 @@
         //│    !     │    @     │    #     │    $     │    %     │      │    ^     │    &     │    *     │    (     │    )     │
             &kp EXCL   &kp AT     &kp POUND  &kp DLLR   &kp PRCNT         &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  TAB      │  ~      │   "      │   :      │  |       │      │   _      │   +      │   {      │   }      │ ENTER    │
-            &kp TAB    &kp TILDE  &kp DQT   &kp COLON  &kp PIPE2         &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp ENTER
+        //│    ?     │   ~      │   "      │   :      │  |       │      │   _      │   +      │   {      │   }      │ ENTER    │
+            &kp QMARK &kp TILDE  &kp DQT   &kp COLON  &kp PIPE2         &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │   ?      │  RShift  │
             &none      &none      &none      &none      &none             &none      &none      &none      &kp QMARK &kp RSHIFT
@@ -145,14 +145,14 @@
         nav_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   ESC    │  HOME    │  UP      │   END    │  PG_UP   │      │          │          │          │          │          │
-            &kp ESC    &kp HOME   &kp UP     &kp END    &kp PG_UP       &kp C_VOL_UP &studio_unlock &bt BT_SEL 0 &bt BT_CLR &bt BT_CLR_ALL
+        //│   ESC    │  HOME    │  UP      │   END    │  PG_UP   │      │  VOL UP  │          │   BT 0   │  BT CLR  │          │
+            &kp ESC    &kp HOME   &kp UP     &kp END    &kp PG_UP       &kp C_VOL_UP &studio_unlock &bt BT_SEL 0 &bt BT_CLR &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  TAB     │  LEFT    │  DOWN    │  RIGHT   │  PG_DN   │      │          │          │          │          │          │
+        //│  TAB     │  LEFT    │  DOWN    │  RIGHT   │  PG_DN   │      │  VOL DN  │ BT PREV  │   BT 1   │  BT NEXT │          │
             &kp TAB    &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN         &kp C_VOL_DN &bt BT_PRV &bt BT_SEL 1 &bt BT_NXT &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │      │          │          │          │          │          │
-            &none      &none      &none      &none      &none              &none      &none      &none      &none    &bootloader
+        //│          │          │          │PREV TAB  │ NEXT TAB │      │   MUTE   │ FULL SCRN│          │          │          │
+            &none      &none      &none   &kp LC(LS(TAB)) &kp LC(TAB)   &kp C_MUTE   &kp F11    &none      &none    &bootloader
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
