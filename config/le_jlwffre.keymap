@@ -97,8 +97,8 @@
         //│  A       │  S       │  D       │  F       │  G       │                      │  H       │  J       │  K       │  L       │  Enter   │
             &kp A      &kp S      &kp D      &kp F      &kp G                             &kp H      &kp J      &kp K      &kp L      &kp ENTER 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  GUI/Z   │  X       │  C       │  V       │  B       │                      │  N       │  M       │ , <      │ . >      │ RShift   │
-           &mt LGUI Z  &kp X      &kp C      &kp V      &kp B                             &kp N      &kp M     &lt 3 COMMA &kp DOT   &kp RSHIFT
+        //│  Ctr/Z   │  X       │  C       │  V       │  B       │                      │  N       │  M       │ , <      │ . >      │ RShift   │
+         &mt LCTRL Z  &kp X      &kp C      &kp V      &kp B                             &kp N      &kp M     &lt 3 COMMA &kp DOT   &kp RSHIFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 2 Z     &kp BSPC        &kp C_MUTE       &kp SPACE    &mo 1
         //                                 ╰──────────┴──────────╯                      ╰──────────┴──────────╯
